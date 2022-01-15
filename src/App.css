@@ -1,0 +1,11 @@
+.form {
+    width: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(58, 25, 206);
+    padding: 5rem 10rem 5rem 10rem;
+    border-radius: 20px;
+    color: white;
+}
