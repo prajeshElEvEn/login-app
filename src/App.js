@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Loginform from "./components/loginform.js"
-import './App.css';
 
 function App() {
   const admin = {
