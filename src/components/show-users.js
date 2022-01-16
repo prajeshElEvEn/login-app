@@ -7,6 +7,9 @@ const User = props => (
             {props.user.username}
         </td>
         <td>
+            {props.user.password}
+        </td>
+        <td>
             <button className="btn btn-primary" onClick={() => {props.deleteUser(props.user._id)}}>Delete</button>
         </td>
     </tr>
