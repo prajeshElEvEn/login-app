@@ -1,82 +1,89 @@
 import React, {Component} from "react";
+// import axios from "axios";
 
 export default class LoginPage extends Component {
+
+    // constructor(props) {
+    //     super(props)
+
+    //     this.onChangeUsername = this.onChangeUsername.bind(this)
+    //     this.onChangePassword = this.onChangePassword.bind(this)
+    //     this.onSubmit = this.onSubmit.bind(this)
+
+    //     this.state = {
+    //         username: '',
+    //         password: '',
+    //         users: []
+    //     }
+    // }
+    // onChangeUsername(e) {
+    //     this.setState({
+    //         username: e.target.value
+    //     })
+    // }
+    // onChangePassword(e) {
+    //     this.setState({
+    //         password: e.target.value
+    //     })
+    // }
+    // onSubmit(e) {
+    //     e.preventDefault()
+
+    //     const user = {
+    //         username: this.state.username,
+    //         password: this.state.password,
+    //     }
+
+    //     // console.log(user)
+
+    //     axios.get('http://localhost:5000/users/', user)
+    //     .then(res => console.log(res.data))
+
+    //     this.setState({
+    //         users: this.state.users.filter(el => el.username !== username)
+    //     })
+
+    //     // window.location = '/'
+    //     this.setState({
+    //         username: "",
+    //         password: ""
+    //     }) 
+    // }
+
     render() {
         return(
             <div>
                 <h1>Login Here.</h1>
+                {/* <form onSubmit={this.onSubmit} className="form">
+                    <div className="form-group">
+                        <label>Username:</label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            onChange={this.onChangeUsername}
+                            value={this.state.username}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>Password:</label>
+                        <input
+                            type="password"
+                            required
+                            className="form-control"
+                            onChange={this.onChangePassword}
+                            value={this.state.password}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <input
+                            type="submit"
+                            className="btn btn-primary"
+                            value="Login"
+                        />
+                    </div>
+                </form> */}
             </div>
         )
     }
 }
-
-// import React, {useState} from 'react'
-
-// const admin = {
-//     username: "root",
-//     password: "root",
-//   }
-
-//   const [user, setUser] = useState({username: "", password: ""})
-//   const [error, setError] = useState("")
-
-//   const Login = details => {
-//     console.log(details)
-
-//     if (details.username === admin.username && details.password === admin.password) {
-//       console.log("Logged in.")
-//       setUser( {
-//         username: details.username,
-//         password: details.password
-//       })
-//     } else {
-//       console.log("Details do not match.")
-//       setError("Details do not match.")
-//     }
-//   }
-
-//   const Logout = () => {
-//     setUser({
-//       username: "",
-//       password: ""
-//     })
-//   }
-
-// const Loginform = ({Login, error}) => {
-
-//     const [details, setDetails] = useState({username: "", password: ""})
-//     const submitHandler = e => {
-//         e.preventDefault()
-//         Login(details)
-//     }
-
-//     return (
-//         <form onSubmit={submitHandler}>
-//             <div className='form-inner'>
-//                 <h2>Login</h2>
-//             </div>
-//             <div className='form-group'>
-//                 <label htmlFor='username'>Username:</label>
-//                 <input type="text" name='username' id="username" onChange={e => setDetails({...details, username: e.target.value})} value={details.username} />
-//             </div>
-//             <div className='form-group'>
-//                 <label htmlFor='password'>Password:</label>
-//                 <input type="password" name='password' id='password' onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
-//             </div>
-//             <input type="submit" value="Login"/>
-//             {error !== "" ? (<div className='error'>{error}</div>) : ""}
-//         </form>
-//     )
-// }
-
-// {user.username !== "" ? (
-//     <div className='welcome'>
-//       <h1>Welcome, <span>{user.username}</span></h1>
-//       <button onClick={Logout}>Logout</button>
-//     </div>
-//   ) : (
-//     <Loginform Login={Login} error={error}/>
-//   )
-//   }
-
-// export default Loginform

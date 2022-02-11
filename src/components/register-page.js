@@ -40,7 +40,7 @@ export default class RegisterPage extends Component {
             password: this.state.password,
         }
 
-        console.log(user)
+        // console.log(user)
 
         axios.post('http://localhost:5000/users/add', user)
         .then(res => console.log(res.data))
@@ -49,7 +49,7 @@ export default class RegisterPage extends Component {
         this.setState({
             username: "",
             password: ""
-        })
+        }) 
     }
 
     render() {
